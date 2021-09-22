@@ -1,13 +1,6 @@
-import copy
-
-import numpy
-import numpy as np
-
 from maps import load_map
-from tools import Position, Mapsize, Map, display_map, get_neighbour_positions, check_for_street, replace_street_icons, \
-    char_map_to_tile_map, display_map_ground, Tile, get_size_ground_of_building
+from tools import Position, Map, char_map_to_tile_map, get_size_ground_of_building
 from buildings import Building
-from constants import *
 
 from interface import draw_map
 from datetime import datetime

@@ -5,7 +5,8 @@ from constants import *
 from tools import tiles_to_numpy_array_representation
 import math
 
-def draw_map(maps, draw_with_border = True):
+
+def draw_map(maps, draw_with_border=True):
     map_index = 0
 
     def next_map(map):
@@ -53,7 +54,7 @@ def draw_map(maps, draw_with_border = True):
                 pygame.quit()
                 sys.exit()
             if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
-                if map_index < len(maps)-1:
+                if map_index < len(maps) - 1:
                     map_index += 1
                     next_map(maps[map_index])
                 else:
